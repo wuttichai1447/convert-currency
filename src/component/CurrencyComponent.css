@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+}
+.styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgba(220, 0, 0, 1);
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.styled:hover {
+    background-color: rgba(255, 0, 0, 1);
+}
+
+.styled:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+body{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.money-img{
+    width: 215px;
+
+}
+.equal{
+    font-weight: bold;
+    font-size: 40px;
+}
+.currency{
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.currency select{
+    padding: 10px 20px 10px 10px;
+    border: 1px solid#dedede;
+    font-size: 16px;
+    background: transparent;
+    appearance: none;
+}
+
+.currency input{
+    border: 0;
+    background: transparent;
+    font-size: 30px;
+    text-align: right;
+
+}
+select:focus,input:focus{
+    outline: none;
+}
